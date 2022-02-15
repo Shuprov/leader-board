@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 220px;
+}
+.navbar{
+    display: flex;
+}
+.icon img{
+    height: 2.5em;
+}
+.icon span{
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
+}
+nav section{
+    background-color: royalblue;
+}
+body{
+    background-color: rgb(238, 247, 247);
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    margin-left: 430px;
+}
+.nav-right a{
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+}
+section{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+.section-title{
+    color: royalblue;
+}
+.top-players, .blogs, .courses{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.top-players, .courses{
+    grid-template-columns: repeat(3,1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2,1fr);
+}
+.player img{
+    height: 50px;
+    margin-right: 20px;
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+}
+.thumbnail img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.filled{
+    color: goldenrod;
+    font-size: 0.6em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: 0.6em;
+}
+.course img{
+    width: 200px;
+}
+.course-info{
+    display: flex;
+}
+.course-detail a{
+    color: red;
+}
+.course-duration i,.course-duration span{
+    color: red;
+}
+.course-duration{
+    background-color: lightpink;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+.course-review p{
+    color: gray;
+    margin-left: 0.8em;
+}
+
+@media (max-width:992px)
+{
+    .top-players,.courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width:688px)
+{
+    .top-players, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+         display: block;
+    }
+}
